@@ -6,21 +6,33 @@
   </head>
   <body>
     <script>
+      //ESERCIZIO UNO
+      //Array delle mail
       var mailList = [ 'uno@gmail.com', 'due@gmail.com', 'tre@gmail.com', 'quattro@gmail.com' ];
+
+      //Variabile per l'inserimento della mail da parte dell'utente
       var accessMail = prompt("Benvenuto! Inserisci la tua mail con la quale sei registrato!");
+
+      //Ciclo for di lettura array
       for (var i = 0; i < mailList.length; i++) {
+
+        //verifico se la mail è già presente e ne stampo il risultato
         if (accessMail === mailList[i]) {
           console.log("Utente confermato!")
           console.log("BENTORNATO " + accessMail +  "!")
         }
       }
 
-
-
+      //ESERCIZIO DUE
+      //variabili con risultato casuale
       var human = Math.floor((Math.random() * 6 + 1));
       var CPU = Math.floor((Math.random() * 6 + 1));
+
+      //risultati ottenuti
       console.log("PUNTEGGIO UMANO = " + human);
       console.log("PUNTEGGIO CPU = " + CPU);
+
+      //dichiarazione del vincitore
       if (human < CPU) {
 
         console.log("VINCE LA CPU")
@@ -30,9 +42,6 @@
       else {
         console.log("PAREGGIO");
       }
-
-
-
     </script>
   </body>
 </html>
