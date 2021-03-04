@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mail</title>
+  </head>
+  <body>
+    <script>
+      var mailList = [ 'uno@gmail.com', 'due@gmail.com', 'tre@gmail.com', 'quattro@gmail.com' ];
+      var accessMail = prompt("Benvenuto! Inserisci la tua mail con la quale sei registrato!");
+      for (var i = 0; i < mailList.length; i++) {
+        if (accessMail === mailList[i]) {
+          console.log("Utente confermato!")
+          console.log("BENTORNATO " + accessMail +  "!")
+        }
+      }
+
+
+
+      var human = Math.floor((Math.random() * 6 + 1));
+      var CPU = Math.floor((Math.random() * 6 + 1));
+      console.log("PUNTEGGIO UMANO = " + human);
+      console.log("PUNTEGGIO CPU = " + CPU);
+      if (human < CPU) {
+
+        console.log("VINCE LA CPU")
+      } else if (human > CPU) {
+        console.log("VINCE L'UMANO");
+      }
+      else {
+        console.log("PAREGGIO");
+      }
+
+
+
+    </script>
+  </body>
+</html>
